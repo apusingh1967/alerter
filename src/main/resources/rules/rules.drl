@@ -1,5 +1,3 @@
-package KieRule;
-
 import com.rbccm.alerter.Order
 
 rule "HDFC"

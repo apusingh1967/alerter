@@ -1,6 +1,5 @@
 package com.rbccm.alerter;
 
-import org.drools.compiler.kie.builder.impl.KieBuilderImpl;
 import org.kie.api.KieServices;
 import org.kie.api.builder.KieBuilder;
 import org.kie.api.builder.KieFileSystem;
@@ -20,7 +19,7 @@ public class DroolsConfig {
 
   private KieFileSystem getKieFileSystem(){
     KieFileSystem fileSystem = kieServices.newKieFileSystem();
-    fileSystem.write(ResourceFactory.newClassPathResource("rules.drl"));
+    fileSystem.write(ResourceFactory.newClassPathResource("rules/rules.drl"));
     return fileSystem;
   }
 
