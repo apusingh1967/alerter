@@ -1,0 +1,20 @@
+package KieRule;
+
+import com.rbccm.alerter.Order
+
+rule "HDFC"
+
+when
+order: Order(cardType == "HDFC"&& price > 10000)
+then
+order.setDiscount(10);
+end;
+
+rule "RBC"
+
+when
+order: Order(cardType == "RBC"&& price > 15000)
+then
+order.setDiscount(8);
+end;
+
